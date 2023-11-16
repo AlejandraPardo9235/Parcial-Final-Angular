@@ -1,0 +1,14 @@
+<!-- dashboard.component.html -->
+<div class="container mt-5">
+    <h2>Bienvenido, {{ userName }}!</h2>
+    <p>Este es tu dashboard.</p>
+    <div *ngIf="userName === 'Admin'">
+      <button class="btn btn-primary">Crear Usuarios</button>
+      <button class="btn btn-primary">Crear Productos</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  
+  <h2>Listado de Productos</h2>
+<app-lista-productos></app-lista-productos>
